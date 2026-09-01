@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weightlose / meal ideas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>weightlose / meal ideas</h1>
+      <p class="subtitle">Aktuell: <strong>90 kg</strong> &bull; Ziel: <strong>80 kg</strong> &bull; Richtwert: <strong>~1.900–2.000 kcal / 130–150g Protein</strong></p>
+    </header>
+
+    <!-- Rezept-Bibliothek (Klickbar für mehr Ideen) -->
+    <section class="library-section">
+      <h2 class="section-title">Rezept- & Mahlzeiten-Bibliothek</h2>
+      <p class="section-desc">Klicke auf eine Kategorie, um empfohlene Gerichte, Makros und Zubereitungsideen zu öffnen:</p>
+      
+      <div class="meal-category-grid">
+        <button class="cat-btn" data-meal="breakfast">
+          <span class="cat-icon">🍳</span>
+          <span class="cat-title">Frühstück</span>
+          <span class="cat-sub">7 Optionen (Herzhaft & Süß)</span>
+        </button>
+        <button class="cat-btn" data-meal="lunch">
+          <span class="cat-icon">🥗</span>
+          <span class="cat-title">Mittagessen</span>
+          <span class="cat-sub">8 Optionen (Fleisch, Fisch & Veggie)</span>
+        </button>
+        <button class="cat-btn" data-meal="dinner">
+          <span class="cat-icon">🥩</span>
+          <span class="cat-title">Abendessen</span>
+          <span class="cat-sub">8 Optionen (Fleisch, Fisch & Veggie)</span>
+        </button>
+        <button class="cat-btn" data-meal="snack">
+          <span class="cat-icon">🥣</span>
+          <span class="cat-title">Snacks & Shakes</span>
+          <span class="cat-sub">9 Optionen (140–330 kcal)</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Beispiel-Tage -->
+    <h2 class="section-title">Beispiel-Tage (Full Day of Eating)</h2>
+    <p class="section-desc">Zwei vollwertige Tage als Inspiration, wie eine optimale Verteilung aussehen kann:</p>
+
+    <main class="card-grid">
+      <!-- Tag 1: High-Protein Optimized -->
+      <section class="card plan-card">
+        <div class="card-header badge-blue">
+          <h2>1. High-Protein Beispieltag</h2>
+          <span class="badge-tag">Max. Sättigung & Muskelerhalt</span>
+        </div>
+        <p class="desc">Fokus auf magere Proteinquellen, komplexe Kohlenhydrate und konstante Energie.</p>
+        
+        <div class="day-schedule">
+          <div class="meal-block">
+            <div class="meal-top">
+              <span class="meal-type">Frühstück</span>
+              <span class="meal-macros">ca. 650 kcal &bull; 40g Protein</span>
+            </div>
+            <p class="meal-text">4 Eier (in max. 1 TL Olivenöl gebraten), 1 Apfel oder Kiwi, 1–2 Scheiben echtes Sauerteigbrot.</p>
+          </div>
+
+          <div class="meal-block">
+            <div class="meal-top">
+              <span class="meal-type">Mittagessen</span>
+              <span class="meal-macros">ca. 550 kcal &bull; 45g Protein</span>
+            </div>
+            <p class="meal-text">180g Hähnchenbrustfilet, 150g gekochter Reis mit Currysauce (fettarme Milch statt Sahne) oder asiatisch mit Brokkoli.</p>
+          </div>
+
+          <div class="meal-block">
+            <div class="meal-top">
+              <span class="meal-type">Snack</span>
+              <span class="meal-macros">ca. 200 kcal &bull; 30g Protein</span>
+            </div>
+            <p class="meal-text">200g Magerquark mit einem Schuss Milch cremig gerührt, etwas Honig und 50g Beeren-Mix.</p>
+          </div>
+
+          <div class="meal-block">
+            <div class="meal-top">
+              <span class="meal-type">Abendessen</span>
+              <span class="meal-macros">ca. 900 kcal &bull; 70g Protein</span>
+            </div>
+            <p class="meal-text">150g Rindersteak (max. 1 TL Öl), 150g Salzkartoffeln oder Püree (vorsichtig mit Butter), 1 ganze Avocado.</p>
+          </div>
+
+          <div class="day-total total-blue">
+            <strong>Tagesbilanz:</strong> ~2.000 kcal | ~150g Protein | Gesunde Fette + 3L Wasser
+          </div>
+        </div>
+      </section>
+
+      <!-- Tag 2: Vegetarischer Protein Plan -->
+      <section class="card plan-card">
+        <div class="card-header badge-green">
+          <h2>2. Vegetarischer Beispieltag</h2>
+          <span class="badge-tag">100% Fleischfrei</span>
+        </div>
+        <p class="desc">Hoher Proteingehalt und Ballaststoffe rein über pflanzliche Quellen, Eier und Milchprodukte.</p>
+        
+        <div class="day-schedule">
+          <div class="meal-block">
+            <div class="meal-top">
+              <span class="meal-type">Frühstück</span>
+              <span class="meal-macros">ca. 600 kcal &bull; 35g Protein</span>
+            </div>
+            <p class="meal-text">Tofu Scramble (200g fester Tofu mit Kurkuma & Gewürzen), 1/2 Avocado und 1–2 Scheiben Vollkornbrot.</p>
+          </div>
+
+          <div class="meal-block">
+            <div class="meal-top">
+              <span class="meal-type">Mittagessen</span>
+              <span class="meal-macros">ca. 550 kcal &bull; 26g Protein</span>
+            </div>
+            <p class="meal-text">3 Eier (gekocht oder als Spiegelei), 150g Salzkartoffeln, 100g mariniertes Ofengemüse.</p>
+          </div>
+
+          <div class="meal-block">
+            <div class="meal-top">
+              <span class="meal-type">Snack</span>
+              <span class="meal-macros">ca. 350 kcal &bull; 35g Protein</span>
+            </div>
+            <p class="meal-text">Shake aus 250ml fettarmer Milch (oder Sojamilch), 1 reifen Banane und 30g Proteinpulver.</p>
+          </div>
+
+          <div class="meal-block">
+            <div class="meal-top">
+              <span class="meal-type">Abendessen</span>
+              <span class="meal-macros">ca. 550 kcal &bull; 35g Protein</span>
+            </div>
+            <p class="meal-text">150g Tempeh Stir-Fry mit Edamame, Paprika, Blumenkohlreis und etwas Sojasauce.</p>
+          </div>
+
+          <div class="day-total total-green">
+            <strong>Tagesbilanz:</strong> ~2.000 kcal | ~130g Protein | Ballaststoffreich + 3L Wasser
+          </div>
+        </div>
+      </section>
+    </main> 
+  </div>
+
+  <!-- Popup für Rezept-Vorschläge -->
+  <div id="mealModal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Mahlzeiten</h3>
+        <button id="closeModal" class="btn-close">&times;</button>
+      </div>
+      
+      <div id="mealListContainer" class="modal-body">
+        <!-- Inhalte werden per JS geladen -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
