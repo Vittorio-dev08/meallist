@@ -10,6 +10,8 @@
   --blue-soft: #eff6ff;
   --green: #16a34a;
   --green-soft: #f0fdf4;
+  --orange: #d97706;
+  --orange-soft: #fffbeb;
 }
 
 * {
@@ -27,7 +29,7 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -67,7 +69,7 @@ header h1 {
 
 .meal-category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -107,10 +109,10 @@ header h1 {
   color: var(--text-muted);
 }
 
-/* 2-Column Day Grid */
+/* 3-Column / Responsive Day Grid */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
   align-items: stretch;
 }
@@ -137,7 +139,7 @@ header h1 {
 }
 
 .card-header h2 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .badge-tag {
@@ -149,6 +151,7 @@ header h1 {
 
 .badge-blue .badge-tag { background: var(--blue-soft); color: var(--blue); }
 .badge-green .badge-tag { background: var(--green-soft); color: var(--green); }
+.badge-orange .badge-tag { background: var(--orange-soft); color: var(--orange); }
 
 .desc {
   font-size: 0.85rem;
@@ -217,6 +220,11 @@ header h1 {
 .total-green {
   background: var(--green-soft);
   color: #166534;
+}
+
+.total-orange {
+  background: var(--orange-soft);
+  color: #9a3412;
 }
 
 /* Modal Popup */
@@ -299,46 +307,4 @@ header h1 {
 .recipe-notes {
   font-size: 0.85rem;
   color: var(--text-muted);
-}
-
-.modal-footer {
-  padding: 1rem 1.25rem;
-  border-top: 1px solid var(--border);
-  background: #fdfdfd;
-}
-
-.add-meal-box h4 {
-  font-size: 0.85rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-muted);
-}
-
-.form-row {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.form-row input {
-  flex: 1;
-  padding: 0.5rem;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  font-size: 0.85rem;
-}
-
-.btn-primary {
-  width: 100%;
-  background: var(--blue);
-  color: #fff;
-  border: none;
-  padding: 0.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background: #1d4ed8;
 }
