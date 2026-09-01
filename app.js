@@ -167,6 +167,62 @@ const mealDatabase = {
       macros: "~140 kcal / ~14 g Eiweiß",
       notes: "150 g Edamame in der Schote (kurz mit kochendem Wasser übergossen/aufgetaut), serviert mit grobem Meersalz und Chiliflocken."
     }
+  ],
+  // NEU: TK & Fertiggerichte
+  convenience: [
+    {
+      name: "Frosta High-Protein Hähnchen & Blumenkohlreis",
+      macros: "~420 kcal / ~40 g Eiweiß",
+      notes: "Direkt aus dem Beutel in die Pfanne. Perfekte Balance aus Ballaststoffen und schnellem Protein ohne Zubereitungsaufwand."
+    },
+    {
+      name: "Iglo Schlemmerfilet (z. B. Bordelaise Classic / Broccoli)",
+      macros: "~450–500 kcal / ~35–40 g Eiweiß",
+      notes: "Ganze Packung (ca. 380g) im Ofen zubereiten. Magerer Fisch als solide Eiweißquelle bei moderatem Fettgehalt."
+    },
+    {
+      name: "Prep My Meal: Asia-Nudeln in Erdnuss-Sauce",
+      macros: "ca. 570 kcal / 43 g Eiweiß",
+      notes: "Fertiggericht mit top Makronährstoffen. Ideal fürs Büro oder wenn keine Zeit zum Vorkochen ist."
+    },
+    {
+      name: "Prep My Meal: Spicy Beef Salami Pizza",
+      macros: "ca. 800 kcal / 60 g Eiweiß (nur 20g Fett)",
+      notes: "Pizza-Alternative mit enorm viel Protein und moderaten Fetten. Perfekt als deftiges Abendessen nach dem Training."
+    },
+    {
+      name: "TK-Garnelen Pfanne (Quick Cook)",
+      macros: "~320 kcal / ~45 g Eiweiß",
+      notes: "250g TK-Garnelen kurz anbraten mit etwas Knoblauch, Sojasauce und TK-Gemüse eurer Wahl."
+    },
+    {
+      name: "Chicken Nuggets im Cornflakes-Mantel (Backofen/Airfryer)",
+      macros: "~450 kcal / ~38 g Eiweiß",
+      notes: "TK-Cornflakes Nuggets im Ofen oder der Heißluftfritteuse backen (spart Fett). Dazu zuckerreduzierter Ketchup."
+    }
+  ],
+  // NEU: Fast Food Hacks
+  fastfood: [
+    {
+      name: "McDonald's: McWrap Spicy Chicken",
+      macros: "ca. 500 kcal / 25 g Eiweiß",
+      notes: "Gute Unterwegs-Option bei McDonald's mit solidem Eiweißgehalt. Am besten mit Wasser oder Zero-Getränk kombinieren."
+    },
+    {
+      name: "McDonald's: 20er Chicken McNuggets",
+      macros: "ca. 900 kcal / 55 g Eiweiß",
+      notes: "Sehr proteinreich, aber fettiger. Gute 'Notfall'-Mahlzeit nach harten Workouts (Empfehlung: nicht mehrmals wöchentlich)."
+    },
+    {
+      name: "McDonald's: Chickenburger",
+      macros: "ca. 280 kcal / 10 g Eiweiß",
+      notes: "Geringe Kaloriendichte, gut als kleiner Snack für unterwegs, wenn sonst nichts verfügbar ist."
+    },
+    {
+      name: "Subway: 15cm Chicken Teriyaki Sub",
+      macros: "ca. 350 kcal / 25 g Eiweiß",
+      notes: "Berechnet mit Schmelzkäse, Sweet Onion Sauce und reichlich frischem Gemüse (Salat, Tomaten, Gurken, Paprika)."
+    }
   ]
 };
 
@@ -180,7 +236,9 @@ document.addEventListener('DOMContentLoaded', () => {
     breakfast: "Frühstücks-Ideen (Herzhaft & Süß)",
     lunch: "Mittagessen-Ideen (Hähnchen, Fleisch, Fisch & Veggie)",
     dinner: "Abendessen-Ideen (Hähnchen, Fleisch, Fisch & Veggie)",
-    snack: "Snacks & Shakes (Süß & Herzhaft)"
+    snack: "Snacks & Shakes (Süß & Herzhaft)",
+    convenience: "TK & Fertiggerichte (Schnell & High-Protein)",
+    fastfood: "Fast-Food-Hacks & Unterwegs"
   };
 
   function renderMeals(category) {
